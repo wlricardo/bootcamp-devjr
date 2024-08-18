@@ -4,7 +4,7 @@ body {
 }
 
 .container {
-  background-color: #e9e9e9;
+  background-color: #e8e8e8;
   margin: auto;
   width: 600px;
   box-shadow: 2px 2px 8px 2px rgba(0, 0, 0, 0.2);
@@ -12,8 +12,14 @@ body {
   overflow: hidden;
 }
 
+a {
+  color: #e8e8e8;
+  font-size: 0.8em;
+  margin-top: 10px;
+}
+
 .header {
-  padding: 2.5rem;
+  padding: 0.9rem;
 }
 
 .flex-container {
@@ -44,9 +50,45 @@ body {
 
 .col-2 {
   background-color: #008b8b;
-  width: 50%;
+  width: 100%;
   padding: 0.62rem 1.25rem;
   color: #fff;
+}
+
+.form-register {
+  background-color: #006b6b;
+  padding: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: space-around;
+}
+
+.form-register .button {
+  width: 30%;
+  margin-top: 0.94rem;
+  padding: 0.62rem 2rem;
+  color: #019e9e;
+  font-size: 0.88rem;
+  font-weight: 400;
+  background-color: #cccccc;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input {
+  width: 95%;
+  height: 22px;
+  padding: 0.9rem;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  border: 0;
+  margin: 10px;
+}
+
+input:focus {
+  outline: none;
+  box-shadow: 0 0 10px #78e9e9;
 }
 
 .subscription-title {
@@ -100,6 +142,10 @@ body {
   text-align: center;
 }
 
+.user-info {
+  align-items: center;
+}
+
 @media screen and (max-width: 620px) {
   html {
     font-size: 14px;
@@ -110,12 +156,22 @@ body {
   }
 
   .col-1,
-  .col-2 {
+  .col-2,
+  .lin-2 {
     width: 100%;
     box-sizing: border-box;
   }
 
   .container {
     width: 95%;
+  }
+
+  .register-container {
+    background-color: #008b8b;
+    flex-direction: column;
+  }
+
+  .header {
+    padding: 15px;
   }
 }
