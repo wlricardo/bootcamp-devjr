@@ -16,6 +16,12 @@ button {
   font-size: 1.2rem;
 }
 
+button:hover {
+  background-color: rgb(122, 62, 127);
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+
 .container {
   background-color: #ffecce;
   padding: 40px;
