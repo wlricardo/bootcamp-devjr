@@ -4,16 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Calculadora</title>
 </head>
 
 <body>
-    <h1>Calculadora</h1>
-    <input>
-    <input>
-    <button>Somar</button>
-    <input readonly>
+    <div class="conteiner">
+        <div class="calculator">
+            <h1>Calculadora</h1>
+            <input id="first-value" type="number">
+            <input id="second-value" type="number">
+            <button onclick="calc()">Somar</button>
+            <input id="result" stype="text" readonly>
+        </div>
+    </div>
+    <div class="history"></div>
 
+    <script src="script.js"></script>
 </body>
 
 </html>
