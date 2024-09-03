@@ -30,8 +30,16 @@ body {
   box-shadow: 0 8px 16px rgba(#000, black, black, 0.2);
 }
 
+.op {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 5px;
+}
+
 input {
   height: 22px;
+  width: 280px;
   padding: 8px;
   font-size: 1.2em;
   margin: 15px 70px;
