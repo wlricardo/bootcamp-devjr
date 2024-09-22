@@ -18,4 +18,14 @@ function calc(op) {
   }
 
   document.getElementById("result").value = result;
+
+  var newHistory =
+    "<p> " + num1 + " " + op + " " + num2 + " = " + result + "</p>";
+  var history = document.getElementById("history");
+
+  history.innerHTML = newHistory + history.innerHTML;
+
+  if (history.children.length > 10) {
+    history.removeChild(history.childNodes[10]);
+  }
 }

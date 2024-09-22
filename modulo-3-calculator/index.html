@@ -9,8 +9,9 @@
 </head>
 
 <body>
-    <div class="conteiner">
+    <div class="container">
         <div class="calculator">
+            <object data="img/calculate_48dp_000000_FILL0_wght400_GRAD0_opsz48.svg" type="image/svg+xml"></object>
             <h1>Calculadora</h1>
             <input id="first-value" type="number" placeholder="Primeiro número">
             <input id="second-value" type="number" placeholder="Segundo número">
@@ -22,9 +23,19 @@
             </div>
             <input id="result" stype="text" readonly>
         </div>
-    </div>
-    <div class="history"></div>
 
+        <div class="history">
+            <div class="history-title">
+                <h1>Histórico</h1>
+            </div>
+            <div class="last-op">
+                <small>10 últimas operações</small>
+                <div id="history">
+                </div>
+            </div>
+        </div>
+
+    </div>
     <script src="script.js"></script>
 </body>
 

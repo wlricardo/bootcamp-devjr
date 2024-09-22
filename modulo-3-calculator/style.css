@@ -7,12 +7,12 @@ body {
   background-color: #000;
 }
 
-.conteiner {
-  width: 600px;
-  background-color: #e0e0e0;
+.container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+  width: 700px;
+  background-color: #62e3c74a;
+  justify-content: center;
   margin: auto;
   padding: 10px;
   border-radius: 5px;
@@ -44,6 +44,7 @@ input {
   font-size: 1.2em;
   margin: 15px 70px;
   border-radius: 5px;
+  text-align: right;
 }
 
 input[type="number"]:focus {
@@ -66,4 +67,29 @@ button {
 button:hover {
   background-color: #5f5ffc;
   box-shadow: 0 8px 16px 0 rgba(black, black, black, 0.2);
+}
+
+.history-title {
+  display: flex;
+  justify-content: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-bottom: 20px;
+}
+
+.history {
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  background-color: #000;
+  color: #fff;
+  width: 400px;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 8px 16px rgba(#000, black, black, 0.2);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.last-op {
+  text-align: right;
+  padding: 40px;
 }
